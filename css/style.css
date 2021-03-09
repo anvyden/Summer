@@ -1,0 +1,29 @@
+.container {
+  width: 100%;
+  max-width: 1140px;
+  margin: auto;
+}
+
+.header {
+  width: 100%;
+  background: url("../img/background.jpg") contain no-repeat;
+}
+
+.header-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.club-adress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=style.css.map */

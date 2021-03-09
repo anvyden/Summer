@@ -1,0 +1,50 @@
+.services
+  padding-top: 4.5rem
+  &__container
+    position: relative
+  &__header
+    margin-bottom: 2.143rem
+    &::after
+      margin-bottom: 1.286rem
+.card
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-direction: column
+  max-width: 15rem
+  &__heading
+    text-align: center
+    margin-top: 1.171rem
+    line-height: 1
+    color: $grey
+    font-size: 1.143rem
+    font-weight: bold
+  &__text
+    max-width: 13.557rem
+    margin-top: 0.514rem
+    text-align: center
+    line-height: 1.3
+    color: $light-grey
+    font-size: 1rem
+    font-weight: 300
+.swiper-container-services
+  padding-left: 1.5rem
+  padding-right: 1.5rem
+.swiper-button-prev
+  width: 36px
+  height: 36px
+  left: 0
+  transform: translate(-15%,-20%)
+  border-radius: 50%
+  background: url('../img/services/arrow-left.png') no-repeat center $yellow
+  &::after
+    display: none
+.swiper-button-next
+  width: 36px
+  height: 36px
+  right: 0
+  transform: translate(15%,-20%)
+  border-radius: 50%
+  background: url('../img/services/arrow-right.png') no-repeat center $yellow
+  &::after
+    display: none

@@ -1,0 +1,58 @@
+.hero
+  position: relative
+  // padding-top: 5.5rem
+  // padding-bottom: 11rem
+  background: url('../img/hero/background-hero.jpg') no-repeat top
+  &__img
+    max-width: 100%
+    position: absolute
+    top: 0
+    right: 1.5%
+    z-index: 10
+.head
+  display: flex
+  flex-wrap: wrap
+  text-transform: uppercase
+  background: url('../img/hero/border-header.png') no-repeat 14% 35%
+  &__text
+    color: #fff
+    font-size: 3.429rem
+    line-height: 1
+    font-weight: 300
+  &__main-text
+    color: $yellow
+    line-height: 1
+    font-size: 5.143rem
+    font-weight: 300
+  &__price
+    color: #fff
+    line-height: 1
+    font-size: 3.429rem
+    font-weight: bold
+.title
+  &__head
+    padding-top: 3rem
+    margin-top: 5.5rem
+  &__description
+    margin-top: 1.143rem
+    margin-bottom: 11rem
+    text-transform: uppercase
+  &-description__text
+    font-size: 1.714rem
+    color: #c4b2bb
+  &-description__number
+    font-size: 1.714rem
+    color: #fff
+.swiper-container-horizontal > .swiper-pagination-bullets
+  bottom: 10%
+  left: 0
+.swiper-pagination-bullet
+  cursor: pointer
+  width: 23px
+  height: 6px
+  background-color: #fff
+  border-radius: 25%
+  margin: 0 5px
+  opacity: 1
+  &-active
+    background-color: $yellow

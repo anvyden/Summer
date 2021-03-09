@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "ACAA,AAAA,UAAU,CAAC;EACT,KAAK,EAAE,IAAI;EACX,SAAS,EAAE,MAAM;EACjB,MAAM,EAAE,IAAI;CAAG;;ACHjB,AAAA,OAAO,CAAC;EACN,KAAK,EAAE,IAAI;EACX,UAAU,EAAE,4BAA4B,CAAC,OAAO,CAAC,SAAS;CAAG;;AAC/D,AAAA,WAAW,CAAC;EACV,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,aAAa;EAC9B,WAAW,EAAE,MAAM;CAAG;;AACxB,AAAA,YAAY,CAAC;EACX,OAAO,EAAE,IAAI;CAAG",
+    "sources": [
+        "../src/style.sass",
+        "../src/sass/_grid.sass",
+        "../src/sass/_header.sass"
+    ],
+    "names": [],
+    "file": "style.css"
+}
