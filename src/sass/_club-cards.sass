@@ -1,0 +1,80 @@
+.club-cards
+  &__header
+    margin-bottom: 2.214rem
+  &__wrapper
+    display: flex
+    justify-content: space-between
+  &__form-wrapper
+    // flex-basis: 40%
+  &__months-wrapper
+    display: flex
+  &__input-months
+    position: absolute
+    z-index: -1
+    opacity: 0
+    &:checked+.club-cards__label-months
+        background-color: $yellow
+        border: 1px solid $yellow
+        color: $brown
+  &__input-adress
+    position: absolute
+    z-index: -1
+    opacity: 0
+  &__label-adress
+    &::before
+     content: ''
+     display: inline-block
+     width: 20px
+     height: 20px
+     border: 1px solid $input-grey
+     border-radius: 25%
+  &__label-months
+    display: inline-flex
+    align-items: center
+    max-width: 8.571rem
+    max-height: 3.214rem
+    padding: 1.1rem 1.929rem
+    margin-right: 0.429rem
+    border-radius: 50px
+    border: 1px solid $input-grey
+    color: $input-grey
+    font-size: 0.8rem
+    text-transform: uppercase
+    cursor: pointer
+    &-first
+      padding: 1.1rem 2.5rem
+    &-fourth
+      padding: 1.1rem 1.714rem
+      margin-right: 0
+    &:hover
+      background-color: $yellow
+      border-color: $yellow
+      color: $brown
+.club-card
+  position: relative
+  flex-basis: 40%
+  margin-right: 6.571rem
+  &__main-img
+    padding: 4.286rem 5.357rem 4.286rem 6.5rem
+  &__background-img-first
+    position: absolute
+    top: 0
+    left: 0
+    z-index: -10
+  &__background-img-second
+    position: absolute
+    bottom: 0
+    right: 0
+    z-index: -10
+.input-group
+  &__adress
+    display: flex
+.label-adress
+  &__description
+    font-size: 1.143rem
+    color: $grey
+    font-weight: bold
+    line-height: 1.4
+  &__text
+    font-weight: 300
+  

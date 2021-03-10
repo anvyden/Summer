@@ -540,4 +540,126 @@ body {
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
 }
+
+.club-cards__header {
+  margin-bottom: 2.214rem;
+}
+
+.club-cards__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.club-cards__months-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.club-cards__input-months {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.club-cards__input-months:checked + .club-cards__label-months {
+  background-color: #ffd11a;
+  border: 1px solid #ffd11a;
+  color: #504331;
+}
+
+.club-cards__input-adress {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.club-cards__label-adress::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #b7b7b7;
+  border-radius: 25%;
+}
+
+.club-cards__label-months {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 8.571rem;
+  max-height: 3.214rem;
+  padding: 1.1rem 1.929rem;
+  margin-right: 0.429rem;
+  border-radius: 50px;
+  border: 1px solid #b7b7b7;
+  color: #b7b7b7;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.club-cards__label-months-first {
+  padding: 1.1rem 2.5rem;
+}
+
+.club-cards__label-months-fourth {
+  padding: 1.1rem 1.714rem;
+  margin-right: 0;
+}
+
+.club-cards__label-months:hover {
+  background-color: #ffd11a;
+  border-color: #ffd11a;
+  color: #504331;
+}
+
+.club-card {
+  position: relative;
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  margin-right: 6.571rem;
+}
+
+.club-card__main-img {
+  padding: 4.286rem 5.357rem 4.286rem 6.5rem;
+}
+
+.club-card__background-img-first {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -10;
+}
+
+.club-card__background-img-second {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -10;
+}
+
+.input-group__adress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.label-adress__description {
+  font-size: 1.143rem;
+  color: #2e2e2e;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.label-adress__text {
+  font-weight: 300;
+}
 /*# sourceMappingURL=style.css.map */
