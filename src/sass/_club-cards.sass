@@ -1,13 +1,24 @@
 .club-cards
+  padding-bottom: 4.571rem
   &__header
     margin-bottom: 2.214rem
   &__wrapper
     display: flex
     justify-content: space-between
+  &__card
+    max-width: 550px
+    max-height: 370px
   &__form-wrapper
     // flex-basis: 40%
   &__months-wrapper
     display: flex
+    justify-content: space-between
+  &__adress-wrapper
+    margin-top: 1.643rem
+  &__personality-info-wrapper
+    display: flex
+    flex-wrap: wrap
+    justify-content: flex-start
   &__input-months
     position: absolute
     z-index: -1
@@ -20,12 +31,17 @@
     position: absolute
     z-index: -1
     opacity: 0
+    &:checked+.club-cards__label-adress::before
+       background: url('../img/club-cards/arrow-checkbox.png') no-repeat center $yellow
+       border-color: $yellow
   &__label-adress
+    display: flex
     &::before
      content: ''
      display: inline-block
      width: 20px
      height: 20px
+     margin-right: 0.857rem
      border: 1px solid $input-grey
      border-radius: 25%
   &__label-months
@@ -50,6 +66,57 @@
       background-color: $yellow
       border-color: $yellow
       color: $brown
+  &__input-personality-info
+    flex-basis: 100%
+    font-size: 1rem
+    padding: 1.286rem 0 1.286rem 1.786rem
+    border: 1px solid $input-grey
+    &:first-child
+      margin-bottom: 0.857rem
+      margin-top: 1.714rem  
+    &:-placeholder
+      color: #94939a
+      font-size: 1rem
+    &::-moz-placeholder
+      color: #94939a
+      font-size: 1rem
+  &__policy-personality-info
+    display: flex
+    flex-basis: 100%
+    justify-content: flex-start
+    margin-top: 1.143rem
+    margin-left: 1.5rem
+    margin-bottom: 1.143rem
+  &__label
+    display: flex
+    align-items: center
+    color: #94939a
+    &::before
+     content: ''
+     display: inline-block
+     width: 20px
+     height: 20px
+     margin-right: 0.857rem
+     border: 1px solid $input-grey
+     border-radius: 25%
+  &__checkbox
+    position: absolute
+    z-index: -1
+    opacity: 0
+    &:checked+.club-cards__label::before
+       background: url('../img/club-cards/arrow-checkbox.png') no-repeat center $yellow
+       border-color: $yellow
+  &__button
+    font-size: 0.857rem
+    line-height: 1
+    text-transform: uppercase
+    font-weight: bold
+    padding: 1.1rem 1.714rem
+    transform: translateY(-15%)
+    &-wrapper
+      display: flex
+      flex-basis: 100%
+      justify-content: flex-end
 .club-card
   position: relative
   flex-basis: 40%
@@ -69,6 +136,8 @@
 .input-group
   &__adress
     display: flex
+    &:last-child
+      margin-top: 1.423rem
 .label-adress
   &__description
     font-size: 1.143rem
@@ -77,4 +146,5 @@
     line-height: 1.4
   &__text
     font-weight: 300
+
   

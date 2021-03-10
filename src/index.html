@@ -402,16 +402,37 @@
                 <!-- /.input-group__months -->
               </div>
               <!-- /.club-cards__months-wrapper -->
-              <div class="club-crads__adress-wrapper">
+              <div class="club-cards__adress-wrapper">
                 <div class="input-group__adress">
-                  <input type="radio" id="Мозаика" class="club-cards__input-adress">
+                  <input type="radio" id="Мозаика" name="adress" value="Мозаика" class="club-cards__input-adress">
                   <label for="Мозаика" class="label-adress club-cards__label-adress">
-                    <p class="label-adress__description">Лето «Мозаика»<br><span class="label-adress__text"> Россия, Москва, 7-я Кожуховская ул., 9</span></p>
+                    <p class="label-adress__description">Лето «Мозаика»<br><span class="label-adress__text">Россия, Москва, 7-я Кожуховская ул., 9</span></p>
+                  </label>
+                </div>
+                <!-- /.input-group__adress -->
+                <div class="input-group__adress">
+                  <input type="radio" id="Щелково" name="adress" value="Щелково" class="club-cards__input-adress">
+                  <label for="Щелково" class="label-adress club-cards__label-adress">
+                    <p class="label-adress__description">Лето «Щелково»<br><span class="label-adress__text">Россия, г. Щелково, ул. Советская, д. 16</span></p>
                   </label>
                 </div>
                 <!-- /.input-group__adress -->
               </div>
-              <!-- /.club-crads__adress-wrapper -->
+              <!-- /.club-cards__adress-wrapper -->
+              <div class="club-cards__personality-info-wrapper">
+                <input type="text" autocomplete="off" name="userName" class="input form__input club-cards__input-personality-info" placeholder="Ваше имя*">
+                <input type="tel" autocomplete="off" name="userPhone" class="input form__input club-cards__input-personality-info" placeholder="Ваш номер телефона*">
+                <div class="policy club-cards__policy-personality-info">
+                  <input type="checkbox" name="policyCheckbox" id="club-cards__policy-checkbox" class="club-cards__checkbox">
+                  <label for="club-cards__policy-checkbox" class="club-cards__label">Я согласен на обработку персональных данных</label>
+                </div>
+                <!-- /.policy -->
+                <div class="club-cards__button-wrapper">
+                  <button class="button club-cards__button button--yellow" id="contacts">Забронировать карту</button>
+                </div>
+                <!-- /.club-cards__button-wrapper -->
+              </div>
+              <!-- /.club-cards__personality-info-wrapper -->
             </div>
             <!-- /.club-cards__form-wrapper -->
           </form>
