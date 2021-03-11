@@ -812,4 +812,144 @@ body {
 .label-adress__text {
   font-weight: 300;
 }
+
+.footer {
+  background: url("../img/footer/background-footer.jpg") no-repeat center;
+  padding-top: 3.786rem;
+  padding-bottom: 2.929rem;
+}
+
+.footer-wrapper {
+  margin-bottom: 3.286rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer-wrapper-socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 2.857rem;
+  border-top: 1px solid #5e5d69;
+}
+
+.footer-callback {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.menu-footer__item {
+  font-size: 1.143rem;
+  line-height: 1.4;
+  color: #ffd11a;
+  font-weight: bold;
+  list-style: none;
+}
+
+.menu-footer__item-link {
+  font-size: 1rem;
+  text-decoration: none;
+  color: #dedee0;
+  font-weight: 300;
+}
+
+.club-adress-choice__heading {
+  margin-bottom: 0.786rem;
+  font-size: 1.143rem;
+  font-weight: bold;
+  color: #ffd11a;
+}
+
+.label-footer-adress__description {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.label-footer-adress__text {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.label-footer-adress::before {
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.callback__text {
+  margin-bottom: 0.429rem;
+  font-size: 0.857rem;
+  color: #dedee0;
+  font-weight: 300;
+}
+
+.callback__number {
+  margin-bottom: 1rem;
+  font-size: 1.357rem;
+  color: #dedee0;
+  font-weight: bold;
+}
+
+.callback__button {
+  padding: 1rem 1.4rem;
+  font-size: 0.857rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.copyright {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+.socials__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.socials__item {
+  margin-right: 0.643rem;
+  list-style: none;
+}
+
+.socials__item:last-child {
+  margin-right: 0;
+}
+
+.socials__link {
+  display: block;
+  position: relative;
+  width: 38px;
+  height: 38px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.socials__link img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
 /*# sourceMappingURL=style.css.map */
