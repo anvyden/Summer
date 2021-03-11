@@ -420,8 +420,19 @@
               </div>
               <!-- /.club-cards__adress-wrapper -->
               <div class="club-cards__personality-info-wrapper">
-                <input type="text" autocomplete="off" name="userName" class="input form__input club-cards__input-personality-info" placeholder="Ваше имя*">
-                <input type="tel" autocomplete="off" name="userPhone" class="input form__input club-cards__input-personality-info" placeholder="Ваш номер телефона*">
+                <div class="club-cards__input-group-personality-info">
+                  <input required type="text" autocomplete="off" name="userName" class="input form__input club-cards__input-personality-info">
+                  <p class="club-cards__placeholder">Ваше имя<strong class="club-cards__placeholder-star">*</strong>
+                </p>
+                </div>
+                <!-- /.club-cards__personality-info-input-group -->
+                <!-- /.club-cards__placeholder -->
+                <div class="club-cards__input-group-personality-info">
+                  <input required type="tel" autocomplete="off" name="userPhone" class="input form__input club-cards__input-personality-info">
+                  <p class="club-cards__placeholder">Ваш номер телефона<strong class="club-cards__placeholder-star">*</strong>
+                </p>
+                </div>
+                <!-- /.club-cards__personality-info-input-group -->
                 <div class="policy club-cards__policy-personality-info">
                   <input type="checkbox" name="policyCheckbox" id="club-cards__policy-checkbox" class="club-cards__checkbox">
                   <label for="club-cards__policy-checkbox" class="club-cards__label">Я согласен на обработку персональных данных</label>

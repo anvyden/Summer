@@ -70,16 +70,16 @@
     flex-basis: 100%
     font-size: 1rem
     padding: 1.286rem 0 1.286rem 1.786rem
-    border: 1px solid $input-grey
+    border: 1px solid $input-grey 
+    &:invalid+.club-cards__placeholder
+      display: block
+  &__input-group-personality-info
+    display: flex
+    flex-basis: 100%
+    position: relative
     &:first-child
       margin-bottom: 0.857rem
-      margin-top: 1.714rem  
-    &:-placeholder
-      color: #94939a
-      font-size: 1rem
-    &::-moz-placeholder
-      color: #94939a
-      font-size: 1rem
+      margin-top: 1.714rem 
   &__policy-personality-info
     display: flex
     flex-basis: 100%
@@ -117,6 +117,16 @@
       display: flex
       flex-basis: 100%
       justify-content: flex-end
+  &__placeholder
+    display: none
+    position: absolute
+    top: 50%
+    left: 5%
+    transform: translate(0%, -50%)
+    color: #94939a
+    font-size: 1rem
+    &-star
+      color: $yellow
 .club-card
   position: relative
   flex-basis: 40%
