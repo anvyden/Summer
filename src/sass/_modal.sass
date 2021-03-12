@@ -1,0 +1,62 @@
+.modal
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  width: 100%
+  height: 100%
+  z-index: 299
+  opacity: 0
+  visibility: hidden
+  display: flex
+  justify-content: center
+  align-items: center
+  background-color: rgba(#100e1b, 0.6)
+  &--visibles
+    opacity: 1
+    visibility: visible
+  &__dialog
+    position: relative
+    max-width: 24.286rem
+    max-height: 22.714rem
+  &__close
+    position: absolute
+    top: -17px
+    right: -17px
+    width: 15px
+    height: 15px
+    background: url('../img/modal/button-close.png') no-repeat center
+    border: none
+    cursor: pointer
+  &__title
+    text-align: center
+    font-size: 1.5rem
+    line-height: 1
+    font-weight: bold
+    text-transform: uppercase
+    padding: 1.429rem 3.429rem
+    background-color: $yellow
+  &__form
+    background-color: #1e1c34
+    padding: 1.857rem 2.571rem 2.071rem 2.571rem
+  &__input
+    margin-bottom: 0.929rem
+  &__policy
+    justify-content: flex-start
+    align-items: flex-start
+    margin-left: 2.071rem
+    margin-bottom: 1.286rem
+  &__label
+    max-width: 11.714rem
+    margin-top: 0.214rem
+    &::before
+      width: 16px
+      height: 16px
+      outline: none
+  &__button
+    text-transform: uppercase
+    font-weight: bold
+    margin-left: 3.857rem
+    margin-right: 3.857rem
+    padding: 1rem 2.4rem

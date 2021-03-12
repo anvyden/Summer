@@ -28,6 +28,7 @@ body {
   border: 1px solid #ffd11a;
   border-radius: 50px;
   padding: 1rem 1.714rem;
+  outline: none;
 }
 
 .button--yellow {
@@ -951,5 +952,99 @@ body {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 299;
+  opacity: 0;
+  visibility: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(16, 14, 27, 0.6);
+}
+
+.modal--visibles {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal__dialog {
+  position: relative;
+  max-width: 24.286rem;
+  max-height: 22.714rem;
+}
+
+.modal__close {
+  position: absolute;
+  top: -17px;
+  right: -17px;
+  width: 15px;
+  height: 15px;
+  background: url("../img/modal/button-close.png") no-repeat center;
+  border: none;
+  cursor: pointer;
+}
+
+.modal__title {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 1.429rem 3.429rem;
+  background-color: #ffd11a;
+}
+
+.modal__form {
+  background-color: #1e1c34;
+  padding: 1.857rem 2.571rem 2.071rem 2.571rem;
+}
+
+.modal__input {
+  margin-bottom: 0.929rem;
+}
+
+.modal__policy {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-left: 2.071rem;
+  margin-bottom: 1.286rem;
+}
+
+.modal__label {
+  max-width: 11.714rem;
+  margin-top: 0.214rem;
+}
+
+.modal__label::before {
+  width: 16px;
+  height: 16px;
+  outline: none;
+}
+
+.modal__button {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-left: 3.857rem;
+  margin-right: 3.857rem;
+  padding: 1rem 2.4rem;
 }
 /*# sourceMappingURL=style.css.map */
